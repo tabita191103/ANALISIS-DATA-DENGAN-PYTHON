@@ -6,8 +6,9 @@ import seaborn as sns
 sns.set(style='dark')
 
 # Load dataset
-day_df = pd.read_csv(r"C:\FOLDER KULIAH\DOKUMEN STUPEN\ANALYSIS DATA PYTHON\data\dataset\day.csv")
-hour_df = pd.read_csv(r"C:\FOLDER KULIAH\DOKUMEN STUPEN\ANALYSIS DATA PYTHON\data\dataset\hour.csv")
+day_df = pd.read_csv("C:\\FOLDER KULIAH\\DOKUMEN STUPEN\\ANALYSIS DATA PYTHON\\data\\dataset\\day.csv")
+hour_df = pd.read_csv("C:\\FOLDER KULIAH\\DOKUMEN STUPEN\\ANALYSIS DATA PYTHON\\data\\dataset\\hour.csv")
+
 
 # Convert date column to datetime
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
